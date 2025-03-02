@@ -2,267 +2,1033 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshini Portfolio</title>
-    <link rel="icon" href="img/icon.webp">
-    <!-- CSS style sheet-->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshini - Portfolio</title>
 
-    <!-- Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/has favicon.png" type="image/svg+xml">
 
-    <!-- Font stylesheet-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Sacramento&display=swap"
-        rel="stylesheet">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+
 </head>
+<style>
+  /* Google Font URL  */
 
-<body>
-    <!-- Header -->
-    <section>
-        <div class="header">
-            <div class="logo">
-                <h1><span id="h">h</span>arshini</h1>
-            </div>
-            <div id="side_menu" class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="sidebar">
-            <p style="text-align: end;" class="close_menu">X</p>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </section>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sacramento&display=swap');
 
-    <!-- Hero Section -->
-    <section>
-        <div id="home" class="hero">
-            <!-- <h1>I'm a Full Stack <br><span id="work">React Developer</span></h1> -->
-             <h1>I'm a <span class="auto_type"></span><br>Developer</h1>
-        </div>
-        
-    </section>
 
-    <!-- About US -->
-    <section id="about"  class="about_section">
-        <div class="about">
-            <div class="about_img">
-                <img src="./img/Untitled design (1).png">
-            </div>
-            <div class="about_title">
-                <p class="section_subtitle">About Me</p>
-                <h2>Need a Creative Product? <br>I can Help You!</h2>
-                <p class="about_para">I am a passionate React JS developer with a strong background in HTML, CSS,
-                    JavaScript, Bootstrap, and Tailwind. I specialize in building dynamic, responsive, and user-friendly
-                    web applications that offer seamless experiences across devices. My expertise in React allows me to
-                    create scalable and efficient solutions tailored to meet user needs.<br><br>
 
-                    In addition to front-end development, I am well-versed in WordPress, enabling me to create versatile
-                    websites. I also use Git for version control and Firebase for real-time database integration. With a
-                    focus on clean, maintainable code and high-performance web applications, I strive to deliver
-                    solutions that balance functionality with intuitive design.
+  #h {
+    color: rgb(183, 182, 182) !important;
+    font-family: 'Sacramento', cursive !important;
+    font-size: 42px !important;
+    font-weight: 400 !important;
+  }
 
-                    Driven by problem-solving and continuous learning, I aim to craft impactful digital experiences that
-                    exceed expectations</p>
-                <button class="about_btn">Download CV</button>
-            </div>
-        </div>
-    </section>
+  #code {
+    color: hsl(24, 74%, 64%) !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+  }
+</style>
 
-    <!-- Skill -->
-    <section id="skill" class="skill_section">
-        <div class="skill_title">
-            <p class="section_subtitle">My skills
-            </p>
-            <h2>What My Programming Skills Included?</h2>
-            <!-- <p class="skill_para">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>-->
+<body id="top" class="dark_theme">
 
-            <p class="skill_para">I create user-friendly, efficient, and visually appealing websites by combining
-                creativity with technical expertise. My approach focuses on building responsive and intuitive web
-                interfaces that streamline user interactions, ensuring a seamless and enjoyable experience across
-                devices. By prioritizing simplicity, functionality, and performance, I strive to deliver websites that
-                not only meet user needs but also stand out with their accessibility and modern design.</p>
+  <!-- 
+    - #HEADER
+  -->
 
-        </div>
-        <div class="skill">
-            <div class="skill_icon">
-                <img src="./img/html-5.png">
-                <img src="./img/css-3.png">
-                <img src="./img/java-script.png">
-                <img src="./img/bootstrap.png">
-                <img src="./img/tailwind.png">
-                <img src="./img/git.png">
-                <img src="./img/FB.png">
-                <img src="./img/react.png">
-                <img src="./img/wordpress.png">
+  <header class="header" data-header>
+    <div class="container">
 
-            </div>
+      <h1 class="h1 logo">
+        <a href="#"><span style=" font-family: 'Sacramento', cursive; " id="h">h</span><span
+            style="font-family: 'Poppins', sans-serif; " id="code">Code</span></a>
+      </h1>
 
-        </div>
-    </section>
+      <div class="navbar-actions">
 
-    <!-- Project Title -->
+        <!-- <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select> -->
 
-<Section>
-    <div id="project" class="work_container">
-        <div class="work_title">
-            <p class="section_subtitle">My Works</p>
-            <h2>See My Works Which Will Amaze You!</h2>
-            <p class="work_para">I develop the best quality website that serves for the long-term.
-                Well-documented,
-                clean, easy and elegant interface helps any non-technical clients.</p>
-        </div>
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
 
     </div>
-</section>
+  </header>
 
-    <!-- Project card -->
-    <section>
-        <div class="grid_container">
-            <div class="grid_card">
-                <img src="img/udemy (1).png" width="100%">
-            </div>
-            <div class="grid_card">
-                <img src="img//trip-work.png" width="100%">
-            </div>
-            <div class="grid_card">
-                <img src="img/greenden-work.png" width="100%">
-            </div>
-            <!-- <div class="grid_card">
-            <img src="img/formvalid-work.png" width="100%">
-        </div> -->
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture id="bg-banner">
+            <source srcset="./assets/images/coding-3-75 (1).png" media="(min-width: 768px)">
+            <source srcset="./assets/images/coding-3-75 (1).png" media="(min-width: 500px)">
+            <img src="./assets/images/coding-3-75 (1).png" class="w-100">
+          </picture>
+
+          <!-- <picture id="bg-banner">
+            <source srcset="./assets/images/illu.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/illu.png" media="(min-width: 500px)">
+            <img src="./assets/images/illu.png"
+              class="w-100">
+          </picture> -->
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title" style="padding-top: 0px;">We Design & Build Creative Website</h2>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+
         </div>
-    </section>
 
-    <!-- contact title-->
+        <ul class="hero-social-list">
 
-    <section>
-        <div id="contact" class="contact_container">
-            <div class="contact_title">
-                <p class="section_subtitle">Contact Me</p>
-                <h2>Please Drop a Message</h2>
-                <p class="contact_para">Feel free to contact me for any inquiries, feedback, or assistance. I’m always available and happy to respond to your messages. Your satisfaction is my priority! Here's How you can reach me.</p>
+          <!-- <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
 
-                <div class="social">
-                    <div class="social_icon">
-                        <a href="mailto:harshiniganesan20@gmail.com">   <i class="fa-solid fa-envelope"></i></a>                    </div>
-                    <div class="social_icon">
-                      <a href="https://github.com/HarshiniGanesan20"> <i class="fa-brands fa-github"></i></a> 
-                    </div>
-                    <div class="social_icon">
-                       <a href="https://www.linkedin.com/in/harshini-ganesan-8513072a5/"><i class="fa-brands fa-linkedin"></i></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="contact_form">
-                <div class="form-container">
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li> -->
 
-                    <h5>Get In Touch</h5>
-                    <form>
+          <li>
+            <a href="https://github.com/HarshiniGanesan20" class="hero-social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+              <div class="tooltip">Github</div>
+            </a>
+          </li>
 
-                        <div class="errormsg">
-                            <div class="namebox">
-                                <i class="fa-solid fa-user"></i>
-                                <input id="name" type="text" placeholder="Enter your Name" required>
-                            </div>
-                        </div>
+          <li>
+            <a href="https://www.linkedin.com/in/harshini-20gh/" class="hero-social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
 
 
-                        <div class="errormsg">
-                            <div class="namebox">
-                                <i class="fa-solid fa-envelope"></i>
 
-                                <input id="email" type="email" placeholder="Enter Your Email ID" required>
-                            </div>
-                        </div>
 
-                        <div class="errormsg">
-                            <div class="namebox">
-                                <i class="fa-solid fa-phone"></i>
 
-                                <input id="phone" type="phone" placeholder="Enter Your Phone Number" required>
-                            </div>
-                        </div>
+      <!-- 
+        - #STATS
+      -->
 
-                        <div class="errormsg">
-                            <div class="namebox">
-                                <i class="fa-solid fa-message"></i>
+      <!-- <section class="stats" id="stats">
+        <ul class="stats-list">
 
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <button id="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-    </section>
+          <li>
+            <a href="#" class="stats-card">
 
-    <!-- Footer -->
-    <section>
-        <div class="footer">
-            <p>  <span id="footer_logo1">h</span><span id="footer_logo2">arshini.</span> &copy; <span id="currentYear"></span> All rights reserved</p>
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>  -->
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/coding-3-75 (1).png" alt="aboutimg"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+            I'm Harshini G, a MERN Stack Developer and WordPress Developer with a passion for building clean,
+            user-friendly web applications. I specialize in React, Node.js, Express, MongoDB, and WordPress, creating
+            dynamic and responsive websites. With expertise in HTML, CSS, JavaScript, and Bootstrap, I ensure intuitive
+            functionality and seamless user experiences. I thrive in collaborative environments, working closely with
+            clients to bring their vision to life. Constantly learning and evolving, I stay updated with the latest
+            technologies to deliver high-quality web solutions.
+          </p>
+
+          <div class="btn-group">
+            <a href="https://www.canva.com/design/DAGc5pH5Mu8/Qg41jcOMgc8B4O5fPl8LfA/edit"
+              target="_blank">
+              <button class="btn btn-secondary">Download cv</button></a>
+
+            <!-- <button class="btn btn-primary">Download cv</button> -->
+          </div>
+
         </div>
-    </section>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script>
-        const currentYear = new Date().getFullYear();
-        document.getElementById("currentYear").textContent = currentYear;
+      </section>
 
 
-        // side menu bar 
-
-var sidebar = document.querySelector(".sidebar")
-var side_menu = document.getElementById("side_menu")
-var close_menu = document.querySelector(".close_menu")
-side_menu.addEventListener("click", function () {
-    sidebar.style.marginLeft = "0%"
-})
-
-close_menu.addEventListener("click", function () {
-sidebar.style.marginLeft = "-60%"
-})
-
-// autotype
-
-var typed = new Typed(".auto_type",{
-    strings:["React JS","Wordpress"],
-    typeSpeed:150,
-    backSpeed:150,
-    loop:true
-})
 
 
-    </script>
-   
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Tailwind</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/tailwind.png" alt="Tailwind logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Mongo DB</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/mongo.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Express</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/express.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Node</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/node.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Redux</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/redux.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Netlify</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/netlify.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Postman</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/postman.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Canva</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/canva.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">NPM</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Email JS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/emailjs.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vercel</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vercel.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS- Code</div>
+
+                <div class="card-icon">
+                  <img src="assets/images/vs-code.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">WordPress</div>
+
+                <div class="card-icon">
+                  <img src="assets/images/wordpress.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="projects">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                I develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+            <!-- 1 -->
+            <li>
+              <a href="https://bulk-mail-frontend-pink.vercel.app/ " target="_blank" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="assets/images/bulkmail.jpg" class="w-100"
+                    alt="bulk mail">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Bulk Mail</h3>
+  
+                  <time class="publish-date" datetime="2022-04">MERN APP</time>
+                </div>
+  
+              </a>
+            </li>
+
+          <!-- 2 -->
+          <li>
+            <a href="https://actodo-omega-two.vercel.app/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="assets/images/todo.avif" class="w-100" alt="todo">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">TODO APP</h3>
+
+                <time class="publish-date" datetime="2022-04">REACT JS, Tailwind CSS</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!-- 3 -->
+
+          <li>
+            <a href="https://harshiniganesan20.github.io/form-validation/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/form validate.jpeg" class="w-100"
+                  alt="form validate">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Form Validation</h3>
+
+                <time class="publish-date" datetime="2022-04">HTML, CSS, JS</time>
+              </div>
+
+            </a>
+          </li>
+
+
+          <!-- 4 -->
+
+          <li>
+            <a href="https://harshiniganesan20.github.io/nostra-clone/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="assets/images/dress.jpg" class="w-100" alt="nosta">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Nostra Website</h3>
+
+                <time class="publish-date" datetime="2022-04">HTML, CSS, JS</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!-- 5 -->
+
+          <li>
+            <a href="https://react-weather-api-rouge.vercel.app/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/weather.jpg" class="w-100" alt="weather">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Weather API</h3>
+
+                <time class="publish-date" datetime="2022-04">React, Axios, API</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!-- 6 -->
+
+          <li>
+            <a href="https://express-login-frontend.vercel.app/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="assets/images/expresslogin.jpg" class="w-100"
+                  alt="express login">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Login Page</h3>
+
+                <time class="publish-date" datetime="2022-04">React, Node, Express, Tailwind CSS</time>
+              </div>
+
+            </a>
+          </li>
+
+        
+          
+
+          <!-- 7 -->
+
+          <li>
+            <a href="https://random-joke-redux.vercel.app/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/joke1.jpg" class="w-100"
+                  alt="redux joke">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Random Joke API</h3>
+
+                <time class="publish-date" datetime="2022-04">React, Redux, Axios</time>
+              </div>
+
+            </a>
+          </li>
+
+          <!-- 8 -->
+          <li>
+            <a href="https://harshiniganesan20.github.io/tripadvisor-clone/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/trip.webp" class="w-100"
+                  alt="trip">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">TripAdvisor Clone</h3>
+
+                <time class="publish-date" datetime="2022-04">HTML, CSS</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+
+          </li>
+
+          <!-- 9 -->
+          <li>
+            <a href="https://harshiniganesan20.github.io/my-greenden/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/plant.jpg" class="w-100"
+                  alt="greenden.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Greenden Website</h3>
+
+                <time class="publish-date" datetime="2022-04">Tailwind CSS, JS</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+
+          </li>
+
+          <!-- 10 -->
+          <li>
+            <a href="https://masonry-gallery-react.vercel.app/" target="_blank" class="project-card">
+
+              <figure class="card-banner">
+                <img src="assets/images/gallery.avif" class="w-100"
+                  alt="gallery">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Masonry Gallery</h3>
+
+                <time class="publish-date" datetime="2022-04">React, JS, CSS</time>
+              </div>
+
+            </a>
+          </li>
+
+            <!-- 11 -->
+          
+            <li>
+              <a href="https://harshiniganesan20.github.io/Capcha-verify/" target="_blank" class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="./assets/images/capcha.png" class="w-100" alt="capcha">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Capcha Verification</h3>
+  
+                  <time class="publish-date" datetime="2022-04">HTML, CSS, JS</time>
+                </div>
+  
+              </a>
+            </li>
+            
+              <!-- 12 -->
+          <li>
+            <a href="#"  class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/e-commernce.jpg" class="w-100"
+                  alt="e-commernce.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">E-commerce Website</h3>
+
+                <time class="publish-date" datetime="2022-04">MERN APP</time>
+              </div>
+
+            </a>
+          </li>
+          <li>
+
+          </li>
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title"> Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how i can help. Here's How you can reach me.
+          </p>
+
+          <ul class="contact-list">
+
+            <!-- <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Balambal Appartment,Thangal Street,Virugambakkam,chennai-600092.
+                </address>
+              </div>
+
+            </li> -->
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:9087587229" class="contact-info">9087587229</a>
+
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:harshiniganesan20@gmail.com" class="contact-info">harshiniganesan20@gmail.com</a>
+
+
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+                <li>
+                  <a href="https://www.linkedin.com/in/harshini-20gh/" class="contact-social-link" target="_blank">
+                    <div class="tooltip">Linkedin</div>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/HarshiniGanesan20" class="contact-social-link" target="_blank">
+                    <div class="tooltip">Github</div>
+                    <ion-icon name="logo-github"></ion-icon>
+
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g harshini" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g harshiniganesan20@gmail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="phone number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Harshini G<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; <a href="#"></a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
